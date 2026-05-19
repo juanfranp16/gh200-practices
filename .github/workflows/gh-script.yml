@@ -4,8 +4,11 @@ on:
   issues:
     types: [opened]
 
+
 jobs:
   comment:
+    permissions: 
+      issues: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v9.0.0
